@@ -1,11 +1,10 @@
 FROM python:2
 
-ENV OPS_COMPILER=gnu
-ENV OPS_INSTALL_PATH=/work/OPS/ops
-ENV HDF5_INSTALL_PATH=/usr/
-
 RUN apt-get update && \
     apt-get install -y libhdf5-dev && \
+    export OPS_COMPILER=gnu && \
+    export OPS_INSTALL_PATH=/work/OPS/ops && \
+    export HDF5_INSTALL_PATH=/usr/ && \
     mkdir /work && cd /work && \
     git clone https://github.com/OP-DSL/OPS.git && \
     cd $OPS_INSTALL_PATH/c && \
@@ -19,3 +18,8 @@ RUN apt-get update && \
     pip install -r requirements.txt && \
     make install && \
     make test
+
+ENV OPS_COMPILER=gnu
+ENV OPS_INSTALL_PATH=/work/OPS/ops
+ENV HDF5_INSTALL_PATH=/usr/
+
