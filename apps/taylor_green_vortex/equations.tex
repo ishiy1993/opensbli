@@ -1,0 +1,54 @@
+\documentclass{article}
+\title{Equations}
+\author{\\ }
+\date{\today}
+\usepackage{color}
+\usepackage{breqn}
+\begin{document}
+\maketitle
+\begin{dmath}\frac{\partial}{\partial t} {\rho}_{x_{0},x_{1},x_{2},t} 
+= - 0.5 \left(\frac{\partial}{\partial x_{0}} 
+{u_{0}}_{x_{0},x_{1},x_{2},t} + \frac{\partial}{\partial x_{1}} 
+{u_{1}}_{x_{0},x_{1},x_{2},t} + \frac{\partial}{\partial x_{2}} 
+{u_{2}}_{x_{0},x_{1},x_{2},t}\right) {\rho}_{x_{0},x_{1},x_{2},t} - 
+0.5 \frac{\partial}{\partial x_{0}}\left({\rho}_{x_{0},x_{1},x_{2},t} 
+{u_{0}}_{x_{0},x_{1},x_{2},t}\right) - 0.5 \frac{\partial}{\partial 
+x_{1}}\left({\rho}_{x_{0},x_{1},x_{2},t} 
+{u_{1}}_{x_{0},x_{1},x_{2},t}\right) - 0.5 \frac{\partial}{\partial 
+x_{2}}\left({\rho}_{x_{0},x_{1},x_{2},t} 
+{u_{2}}_{x_{0},x_{1},x_{2},t}\right) - 0.5 \frac{\partial}{\partial 
+x_{0}} {\rho}_{x_{0},x_{1},x_{2},t} {u_{0}}_{x_{0},x_{1},x_{2},t} - 
+0.5 \frac{\partial}{\partial x_{1}} {\rho}_{x_{0},x_{1},x_{2},t} 
+{u_{1}}_{x_{0},x_{1},x_{2},t} - 0.5 \frac{\partial}{\partial x_{2}} 
+{\rho}_{x_{0},x_{1},x_{2},t} {u_{2}}_{x_{0},x_{1},x_{2},t}\end{dmath}\begin{dmath}{u_{0}}_{x_{0},x_{1},x_{2},t} = 
+\frac{{rhou_{0}}_{x_{0},x_{1},x_{2},t}}{{\rho}_{x_{0},x_{1},x_{2},t}}\end{dmath} 
+\begin{dmath}{u_{1}}_{x_{0},x_{1},x_{2},t} = 
+\frac{{rhou_{1}}_{x_{0},x_{1},x_{2},t}}{{\rho}_{x_{0},x_{1},x_{2},t}}\end{dmath} 
+\begin{dmath}{u_{2}}_{x_{0},x_{1},x_{2},t} = 
+\frac{{rhou_{2}}_{x_{0},x_{1},x_{2},t}}{{\rho}_{x_{0},x_{1},x_{2},t}}\end{dmath} 
+\begin{dmath}{p}_{x_{0},x_{1},x_{2},t} = \left(gama - 1\right) \left(- 
+\frac{{\rho}_{x_{0},x_{1},x_{2},t}}{2} 
+\left({u_{0}}_{x_{0},x_{1},x_{2},t}^{2} + 
+{u_{1}}_{x_{0},x_{1},x_{2},t}^{2} + 
+{u_{2}}_{x_{0},x_{1},x_{2},t}^{2}\right) + 
+{rhoE}_{x_{0},x_{1},x_{2},t}\right)\end{dmath} 
+\begin{dmath}{T}_{x_{0},x_{1},x_{2},t} = \frac{gama 
+{p}_{x_{0},x_{1},x_{2},t} 
+Minf^{2}}{{\rho}_{x_{0},x_{1},x_{2},t}}\end{dmath}\begin{dmath}{ke}_{x_{0},x_{1},x_{2},t} = 
+\frac{{\rho}_{x_{0},x_{1},x_{2},t}}{2} 
+\left({u_{0}}_{x_{0},x_{1},x_{2},t}^{2} + 
+{u_{1}}_{x_{0},x_{1},x_{2},t}^{2} + 
+{u_{2}}_{x_{0},x_{1},x_{2},t}^{2}\right)\end{dmath} 
+\begin{dmath}{enstrophy}_{x_{0},x_{1},x_{2},t} = 
+\frac{{\rho}_{x_{0},x_{1},x_{2},t}}{2} \left(\left(- 
+\frac{\partial}{\partial x_{1}} {u_{0}}_{x_{0},x_{1},x_{2},t} + 
+\frac{\partial}{\partial x_{0}} 
+{u_{1}}_{x_{0},x_{1},x_{2},t}\right)^{2} + 
+\left(\frac{\partial}{\partial x_{2}} {u_{0}}_{x_{0},x_{1},x_{2},t} - 
+\frac{\partial}{\partial x_{0}} 
+{u_{2}}_{x_{0},x_{1},x_{2},t}\right)^{2} + \left(- 
+\frac{\partial}{\partial x_{2}} {u_{1}}_{x_{0},x_{1},x_{2},t} + 
+\frac{\partial}{\partial x_{1}} 
+{u_{2}}_{x_{0},x_{1},x_{2},t}\right)^{2}\right)\end{dmath} 
+\begin{dmath}{rhomean}_{x_{0},x_{1},x_{2},t} = 
+{\rho}_{x_{0},x_{1},x_{2},t}\end{dmath}\end{document}
