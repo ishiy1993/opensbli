@@ -1,10 +1,11 @@
 FROM python:2
 
 RUN apt-get update && \
-    apt-get install -y libhdf5-dev && \
+    apt-get install -y mpich libhdf5-mpich-dev && \
     export OPS_COMPILER=gnu && \
     export OPS_INSTALL_PATH=/work/OPS/ops && \
     export HDF5_INSTALL_PATH=/usr/ && \
+    export MPI_INSTALL_PATH=/usr/ && \
     mkdir /work && cd /work && \
     git clone https://github.com/OP-DSL/OPS.git && \
     cd $OPS_INSTALL_PATH/c && \
